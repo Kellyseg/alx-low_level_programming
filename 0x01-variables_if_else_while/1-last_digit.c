@@ -4,7 +4,7 @@
 
 /**
  * main - Print last digit of a random number and state if it is > 5, < 6 or 0
- * Return
+ * Return: Always 0 (success)
  */
 int main(void)
 {
