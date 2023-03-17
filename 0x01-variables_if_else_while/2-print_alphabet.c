@@ -3,12 +3,18 @@
 #include <stdio.h>
 
 /**
- * main - Print last digit of a random number and state if it is > 5, < 6 or 0
- * Return
+ * main - Print out alphabet
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-        int n;
+	char alph[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-        srand(time(0));
-        n = rand() - RAND_MAX / 2;
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alph[i]);
+	}
+	putchar('\n');
+	return (0);
+}
