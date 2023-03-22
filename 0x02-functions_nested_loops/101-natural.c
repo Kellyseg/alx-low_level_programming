@@ -1,28 +1,23 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * main - Entry point
+ * print sum ofall multiples of 5 and 3 up to 1024
  *
  * Return: always 0 (success)
  */
 int main(void)
 {
-	int sum = 0;
-	int n;
+	int i, n = 0;
 
-	for (n = 0; n < 1024; n++)
+	while (i < 1024)
 	{
-		if (n % 3 == 0)
-		if (n % 3 == 0 || n % 5 == 0)
+		if ((i % 3 == 0) || (i % 5 == 0))
 		{
-			sum = sum + n;
+			n += i;
 		}
-		else
-		{
-			continue;
-		}
+		i++;
 	}
-	printf("%d\n", sum);
+	printf("%d\n", n);
 	return (0);
 }
