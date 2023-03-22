@@ -3,7 +3,7 @@
 
 /**
  * main - Entry point
- * print first 52 finoacci numbers
+ * print first 52 fibonacci numbers
  *
  * Return: always 0(success)
  */
@@ -12,7 +12,7 @@ int main(void)
 	int x = 0;
 	long j = 1, k = 2;
 
-	while (x == 0)
+	while (x < 50)
 	{
 		if (x == 0)
 		{
