@@ -16,7 +16,7 @@ int main(void)
 	{
 		if (x == 0)
 		{
-			printf("%ld",  j);
+			printf("%ld", j);
 		}
 		else if (x == 1)
 		{
@@ -25,7 +25,7 @@ int main(void)
 		else
 		{
 			k += j;
-			x = k - j;
+			j = k - j;
 			printf(",%ld", k);
 		}
 		++x;
