@@ -3,7 +3,7 @@
 /**
  * print_triangle - print triangle of squares according parameter
  * @size: size of squares triangle
- * Return
+ * Return: voi
  */
 void print_triangle(int size)
 {
