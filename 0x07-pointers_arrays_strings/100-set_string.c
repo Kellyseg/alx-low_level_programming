@@ -6,7 +6,7 @@
  * @s: pointer to a pointer
  * @to: pointer to value
  *
- * Return: void
+ * Return: nothing
  */
 void set_string(char **s, char *to)
 {
