@@ -12,13 +12,10 @@
 char *_strdup(char *str)
 {
 	size_t len = strlen(str); /* calculate length of input string */
-	char *dup = malloc(len + 1); /* allocate memory for duplicate string */
+	char *dup = (char *)malloc(len + 1); /* allocate memory for duplicate string */
+	dup[len] = '\0';
 
-	if (dup == NULL)
-	{
-		return (NULL);
-	}
-	if (str == NULL)
+	if (str == NULL || dup == NULL)
 	{
 		return (NULL);
 	}
