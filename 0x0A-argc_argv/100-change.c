@@ -45,8 +45,8 @@ int main(int argc, char *argv[])
 		else
 		{
 			num = num - 1;
-			count = count + 1;
 		}
+		count = count + 1;
 	}
 	printf("%d\n", count);
 	return (0);
