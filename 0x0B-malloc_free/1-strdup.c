@@ -11,15 +11,31 @@
  */
 char *_strdup(char *str)
 {
-	size_t len = strlen(str); /* calculate length of input string */
-	char *dup = (char *)malloc(len + 1); /* allocate memory for duplicate string */
-	dup[len] = '\0';
+	int i = 0;
+	char *dup = malloc(sizeof(char) * (i +1));
+	int r;
 
-	if (str == NULL || dup == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	strcpy(dup, str); /* copy input string to duplicate string */
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+
+	if (dup == NULL)
+	{
+		return (NULL);
+	}
+
+	for (r = 0; str[r]; r++)
+	{
+		dup[r] = str[r];
+	}
+
+	dup[r] = '\0';
+
 	return (dup);
 }
