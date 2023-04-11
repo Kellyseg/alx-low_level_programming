@@ -14,7 +14,11 @@ char *_strdup(char *str)
 	size_t len = strlen(str); /* calculate length of input string */
 	char *dup = malloc(len + 1); /* allocate memory for duplicate string */
 
-	if (str == NULL || dup == NULL)
+	if (dup == NULL)
+	{
+		return (NULL);
+	}
+	if (dup == NULL)
 	{
 		return (NULL);
 	}
