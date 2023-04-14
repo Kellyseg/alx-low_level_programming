@@ -2,15 +2,15 @@
 #include <stdlib.h>
 
 /**
- * *_realloc - reallocate a memory block using free & malloc
- * @ptr: pointer to memory previously allocated with a call
- * to malloc
- * @old_size: size in bytes of allocated space for @ptr
- * @new_size: new size in bytes of new memory block
- *
- * Return: @ptr if @new_size == @old_size
- * NULL if new_size == 0 && @ptr != NULL
- */
+* *_realloc - reallocate a memory block using free & malloc
+* @ptr: pointer to memory previously allocated with a call
+* to malloc
+* @old_size: size in bytes of allocated space for @ptr
+* @new_size: new size in bytes of new memory block
+*
+* Return: @ptr if @new_size == @old_size
+* NULL if new_size == 0 && @ptr != NULL
+*/
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *ar;
@@ -18,21 +18,29 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	char *oldie = ptr;
 
 	if (old_size == new_size)
-	return (ptr);
+	{
+		return (ptr);
+	}
 	if (ptr == NULL)
-	ar = malloc(new_size);
-	return (ar);
+	{
+		ar = malloc(new_size);
+		return (ar);
+	}
 	if (new_size == 0)
-	free(ptr);
-	return (NULL);
-
+	{
+		free(ptr);
+		return (NULL);
+	}
 	ar = malloc(new_size);
 
 	if (ar == NULL)
-	return (NULL);
+	{
+		return (NULL);
+	}
 	for (i = 0; i < old_size; i++)
-	ar[i] = oldie[i];
-
+	{
+		ar[i] = oldie[i];
+	}
 	free(oldie);
 	return (ar);
 }
