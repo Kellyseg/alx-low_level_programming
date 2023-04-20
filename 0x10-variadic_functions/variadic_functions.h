@@ -5,7 +5,7 @@
 
 /**
  * struct check - paramenters to check against
- * @c: type
+ * @chk: type
  * @f: the function to send it to
  */
 typedef struct check
