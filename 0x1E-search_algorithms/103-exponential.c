@@ -2,7 +2,7 @@
  * File: 103-exponential.c
  * Author: Kekeli Segbedzi
  */
- 
+
 #include "search_algos.h"
 
 /**
